@@ -1,0 +1,29 @@
+{
+  "name": "Gogo Пицца",
+  "short_name": "Gogo Пицца",
+  "description": "Доставка пиццы - Gogo Пицца",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF6B35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Пиццы",
+      "short_name": "Пиццы",
+      "description": "Посмотреть меню пицц",
+      "url": "/#pizza",
+      "icons": [{ "src": "/pwa-icon.svg", "sizes": "192x192" }]
+    }
+  ]
+}

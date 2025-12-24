@@ -1,0 +1,28 @@
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Увеличиваем отступ, чтобы фиксированный хедер не перекрывал контент при якоре */
+  /* Header (~90px) + Menu (~60px) + запас = ~160px */
+  scroll-padding-top: 100px;
+}
+
+/* Для мобильных устройств можно сделать поменьше, но 160px безопасно везде */
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 140px;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
